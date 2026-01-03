@@ -1,8 +1,14 @@
+import ProfileCard from "./components/ProfileCard";
+
 function App() {
   return (
     <div>
       <h1>Learning Profile</h1>
-      <p>This is a generic user profile to track learning progress.</p>
+      
+      <ProfileCard
+        name="Sahar Raihani"
+        role="React Beginner"
+      />
     </div>
   );
 }
