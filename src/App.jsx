@@ -1,5 +1,7 @@
 import ProfileCard from "./components/ProfileCard";
 import Section from "./components/Section.jsx";
+import StatItem from "./components/StatItem.jsx";
+import ProgressBar from "./components/ProgressBar.jsx";
 
 function App() {
   return (
@@ -12,12 +14,18 @@ function App() {
         imageUrl=""
       />
 
-      <Section title="About">
-        <p>Learning React step by step and tracking progress.</p>
+      <Section title="Stats">
+        <StatItem label="Level" value="Beginner" />
+        <StatItem label="XP" value="120" />
+        <StatItem label="Streak" value="5 days" />
       </Section>
 
       <Section title="Goals">
         <p>Understand components, props and composition.</p>
+      </Section>
+
+      <Section title="React Progress">
+        <ProgressBar percent={35} />
       </Section>
     </div>
   );
