@@ -1,6 +1,9 @@
-function ProfileCard({name, role}) {
+import Avatar from './Avatar.jsx';
+
+function ProfileCard({name, role, imageUrl}) {
     return (
-        <div>
+        <div className='card'>
+            <Avatar imageUrl={imageUrl} name={name} />
             <h2>{name}</h2>
             <p>{role}</p>
         </div>
